@@ -1,4 +1,0 @@
-{
-  "title": "GUI Implementation (Phase 8):",
-  "job": "GUI Implementation (Phase 8):\n\n1. Develop Multi-Scene Editor:\n   - Create `literary_ai/gui/main.py` for core GUI logic\n   - Implement drag-and-drop scene reordering\n   - Add beat adjustment sliders for pacing control\n\n2. Revision History System:\n   - Build `ui/revisions.py` for version history tracking\n   - Implement \"Compare Revisions\" feature\n   - Add undo/redo functionality for scene edits\n\n3. Export Integration:\n   - Create `ui/export_options.py` for format selection\n   - Add Markdown/DOCX export buttons\n   - Implement export progress indicators\n\n4. CLI Command Enhancement:\n   - Update `literary-ai gui` to launch the interface\n   - Add `--mode` flag for editing/viewing\n\n5. Artifacts:\n   - GUI file structure\n   - Core UI components\n   - Export integration\n   - Phase 9 roadmap"
-}
