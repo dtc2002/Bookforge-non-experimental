@@ -1,0 +1,108 @@
+# llm_integration/prompt_engine.py
+from .llm_connector import LLMBridge
+
+class PromptEngine:
+    def __init__(self, llm):
+        self.llm = llm
+
+    def create_prompt(self, context):
+        return f"""
+        {context}
+        Please generate a coherent story chapter based on the provided universe bible.
+        """
+
+# universe_bible/bible_db.py
+import sqlite3
+
+class BibleDB:
+    def __init__(self, db_path='bible.db'):
+        self.conn = sqlite3.connect(db_path)
+        self.create_table()
+
+    def create_table(self):
+        self.conn.execute('''
+            CREATE TABLE IF NOT EXISTS bible_entries (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                concept TEXT,
+                description TEXT,
+                rules TEXT
+            )
+        ''')
+
+    def add_entry(self, concept, description, rules):
+        self.conn.execute('''
+            INSERT INTO bible_entries (concept, description, rules)
+            VALUES (?, ?, ?)
+        ''', (concept, description, rules))
+        self.conn.commit()
+
+    def get_entries(self):
+        return self.conn.execute('SELECT * FROM bible_entries').fetchall()
+
+# universe_bible/bible_editor.py
+class BibleEditor:
+    def __init__(self, db):
+        self.db = db
+
+    def edit_entry(self, entry_id, updates):
+        self.db.conn.execute('''
+            UPDATE bible_entries
+            SET concept=?, description=?, rules=?
+            WHERE id=?
+        ''', (updates['concept'], updates['description'], updates['rules'], entry_id))
+        self.db.conn.commit()
+
+# content_generator/chapter_creator.py
+from .bible_db import BibleDB
+from .llm_connector import LLMBridge
+
+class ChapterCreator:
+    def __init__(self, bible, llm):
+        self.bible = bible
+        self.llm = llm
+
+    def generate_chapter(self, concept):
+        context = self.bible.get_entries()
+        prompt = self.llm.create_prompt(context)
+        return self.llm.generate(prompt)
+
+# content_generator/serial_planner.py
+from .bible_db import BibleDB
+
+class SerialPlanner:
+    def __init__(self, bible):
+        self.bible = bible
+
+    def plan_serial(self):
+        # Logic to plan serialization based on bible entries
+        return 'Serialization plan generated'
+
+# storage/project_saver.py
+import json
+
+class ProjectSaver:
+    def __init__(self, save_path='project_state.json'):
+        self.save_path = save_path
+
+    def save_project(self, data):
+        with open(self.save_path, 'w') as f:
+            json.dump(data, f)
+
+    def load_project(self):
+        with open(self.save_path, 'r') as f:
+            return json.load(f)
+
+# storage/bible_saver.py
+import json
+
+class BibleSaver:
+    def __init__(self, save_path='bible_state.json'):
+        self.save_path = save_path
+
+    def save_bible(self, data):
+        with open(self.save_path, 'w') as f:
+            json.dump(data, f)
+
+    def load_bible(self):
+        with open(self.save_path, 'r') as f:
+            return json.load(f)
