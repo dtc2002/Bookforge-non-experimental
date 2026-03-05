@@ -1,4 +1,0 @@
-{
-  "title": "Phase 6 Implementation:",
-  "job": "Phase 6 Implementation:\n\n1. Finalize Drafts:\n   - Create `finalize_drafts()` in passes.py\n   - Convert scene drafts to export-ready format\n   - Integrate with SQLite store for output storage\n\n2. Exporters Development:\n   - Implement Markdown exporter in exporters.py\n   - Add DOCX export option (stubbed)\n   - Create `export_to_markdown()` and `export_to_docx()` functions\n\n3. CLI Updates:\n   - Add `literary-ai export` command\n   - Add `--format` flag for Markdown/DOCX selection\n\n4. Checker Integration:\n   - Final voice/continuity revision pass\n   - Add `validate_final_output()` in checkers/voice.py\n\n5. Output:\n   - Finalized draft structure\n   - Exporter implementations\n   - Updated CLI commands\n   - Complete pipeline documentation"
-}
