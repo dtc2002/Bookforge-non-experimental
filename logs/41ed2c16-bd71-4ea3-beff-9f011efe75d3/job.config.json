@@ -1,0 +1,4 @@
+{
+  "title": "Model Assignment System Testing (Phase 14):",
+  "job": "Model Assignment System Testing (Phase 14):\n\n1. **GUI & Config Verification**:\n   - Validate model selection settings in GUI\n   - Confirm `config/models.py` updates on save\n   - Test fallback to default models if custom settings fail\n\n2. **Runner Matching Tests**:\n   - Enqueue tasks with different priorities:\n     - High: `model_revision` (e.g., repair loops)\n     - Medium: `model_draft` (e.g., initial writing)\n     - Low: `model_export` (e.g., formatting)\n   - Verify SQLite tracking of model assignments\n\n3. **Ollama Integration Validation**:\n   - Test local/remote Ollama instance connectivity\n   - Validate response from `workers/ollama_runner.py`\n   - Check GUI for Ollama instance status updates\n\n4. **Artifacts**:\n   - Test logs\n   - SQLite verification output\n   - Ollama response samples\n   - Phase 15 roadmap"
+}
