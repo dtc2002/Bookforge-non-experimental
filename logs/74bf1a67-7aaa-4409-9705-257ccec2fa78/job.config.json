@@ -1,0 +1,4 @@
+{
+  "title": "Phase 7 Implementation:",
+  "job": "Phase 7 Implementation:\n\n1. Pipeline Testing:\n   - Create end-to-end test script in `tests/full_pipeline_test.py`\n   - Validate SQLite store integration\n   - Add test scenarios for repair loop triggers\n\n2. GUI Framework Setup:\n   - Initialize GUI directory structure\n   - Create basic CLI interface for scene editing\n   - Add `literary-ai gui` command stub\n\n3. Advanced Features Planning:\n   - Design worker mode architecture\n   - Create plugin hooks for humanization\n   - Update documentation for Phase 7\n\n4. Output:\n   - Test script and results\n   - GUI framework structure\n   - Updated CLI commands\n   - Phase 8 roadmap"
+}
