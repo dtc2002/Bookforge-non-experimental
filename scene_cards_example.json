@@ -1,0 +1,22 @@
+{
+    "scene_number": 1,
+    "scene_goal": "The protagonist discovers a hidden message in the library",
+    "key_beats": [
+        "Protagonist enters dusty library",
+        "Finds encrypted book",
+        "Deciphers message revealing secret society",
+        "Decides to investigate further"
+    ],
+    "dialogue_prompts": [
+        "'I've always suspected there was more to this place,' says the librarian.",
+        "'This message is a warning about the society's experiments.'"
+    ],
+    "continuity_markers": [
+        "Library discovery connects to previous chapter's mystery",
+        "Secret society setup for future plot twists"
+    ],
+    "metadata": {
+        "timestamp": "2026-03-05T14:44:38Z",
+        "author": "AI Orchestrator"
+    }
+}
