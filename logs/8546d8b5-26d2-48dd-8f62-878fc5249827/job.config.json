@@ -1,4 +1,0 @@
-{
-  "title": "Worker Mode Architecture (Phase 10):",
-  "job": "Worker Mode Architecture (Phase 10):\n\n1. Task Queue System:\n   - Implement distributed task queue using Celery/RabbitMQ\n   - Create `workers/task_queue.py` for task management\n   - Add `@celery.task` decorators for pipeline stages\n\n2. Scheduler Integration:\n   - Develop `workers/scheduler.py` for workload distribution\n   - Add CLI command: `literary-ai worker --start` to launch workers\n   - Implement task prioritization for repair loops\n\n3. Worker Communication:\n   - Create `workers/worker_communicator.py`\n   - Add status tracking for ongoing tasks\n   - Implement result retrieval system\n\n4. SQLite Store Enhancement:\n   - Add task metadata fields for distributed processing\n   - Update schema for worker execution tracking\n\n5. Artifacts:\n   - Worker directory structure\n   - Task queue implementation\n   - Scheduler and communication system\n   - Phase 11 roadmap"
-}
