@@ -1,0 +1,4 @@
+{
+  "title": "Phase 4 Implementation:",
+  "job": "Phase 4 Implementation:\n\n1. Implement Pass 4: Scene Cards Generation\n   - Create `generate_scene_cards()` in passes.py\n   - Output: Scene goals, key beats, dialogue prompts, continuity markers\n   - Use Ollama with model selection for scene generation\n\n2. Update Orchestrator:\n   - Add Pass 4 to workflow ordering\n   - Integrate with repair loop\n\n3. Checker Integration:\n   - Add plot thread tracker for cross-book consistency\n   - Enhance pacing.py for conflict escalation analysis\n\n4. CLI Updates:\n   - Add `literary-ai scenes` command\n\n5. Artifacts:\n   - JSON structure for scene cards\n   - SQLite integration for scene tracking\n\n6. Output:\n   - Pass implementation\n   - Updated orchestrator\n   - Checker stubs\n   - Phase 5 roadmap"
+}
