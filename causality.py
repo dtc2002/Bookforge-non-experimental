@@ -1,0 +1,1 @@
+def check_causality(outline):    """Validate cause-effect relationships in plot."""    for act in outline['acts']:        for chapter in act['chapters']:            if not validate_causal_chain(chapter['events']):                return False    return True

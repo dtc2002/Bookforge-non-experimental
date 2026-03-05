@@ -1,0 +1,1 @@
+def check_continuity(outline):    """Verify arc consistency across acts."""    arcs = outline['arcs']    for arc in arcs:        if not validate_arc_consistency(arc):            return False    return True

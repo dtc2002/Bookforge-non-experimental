@@ -1,0 +1,1 @@
+def main():    """CLI interface for literary AI tools."""    if len(sys.argv) < 2:        print("Usage: literary-ai outline [options]")        return    if sys.argv[1] == "outline":        outline = generate_book_outline("Sample Title", "Jane Author", "Fantasy")        print(json.dumps(outline, indent=2))
