@@ -1,0 +1,4 @@
+{
+  "title": "Create the literary AI project structure with:",
+  "job": "Create the literary AI project structure with:\n\n1. Project directory structure with:\n   - gui/ (main_window.py, settings.py)\n   - llm_integration/ (llm_connector.py, prompt_engine.py)\n   - universe_bible/ (bible_db.py, bible_editor.py)\n   - content_generator/ (chapter_creator.py, serial_planner.py)\n   - storage/ (project_saver.py, bible_saver.py)\n   - main.py\n\n2. Setup Python environment with:\n   - venv\n   - requirements.txt (tkinter, transformers, sqlite3)\n\n3. Create README.md with project documentation\n\n4. Test setup by running main.py to verify structure"
+}
