@@ -1,0 +1,4 @@
+{
+  "title": "Phase 2 Implementation:",
+  "job": "Phase 2 Implementation:\n\n1. Implement Pass 2: Book Outline Generation\n   - Create `generate_book_outline()` in passes.py\n   - Output: Acts/parts structure, chapter lists per book, arc mapping, cliffhangers\n   - Use Ollama for content generation with model selection\n\n2. Update Orchestrator:\n   - Add Pass 2 to workflow ordering\n   - Integrate with repair loop\n\n3. Checker Integration:\n   - Add causality.py (cause/effect validation)\n   - Update continuity.py for arc consistency\n\n4. CLI Updates:\n   - Add `literary-ai outline` command\n\n5. Artifacts:\n   - JSON structure for book outlines\n   - Integration with SQLite store\n\n6. Output:\n   - Pass implementation\n   - Updated orchestrator\n   - Checker stubs\n   - Phase 3 roadmap"
+}
