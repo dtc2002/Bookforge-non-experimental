@@ -1,0 +1,4 @@
+{
+  "title": "Phase 0 Implementation:",
+  "job": "Phase 0 Implementation:\n\n1. Create pyproject.toml with:\n   - Python 3.11+ requirements\n   - Typer CLI integration\n   - pytest setup\n\n2. Implement:\n   - Dataclasses for ProjectConfig, UniverseBible, PlotThread, CanonFact\n   - Ollama client with HTTP integration\n   - SQLite store init (Characters, PlotThreads, CanonFacts)\n   - Typer CLI commands (init, status, plan, draft, revise, export)\n   - Structured logging\n   - README.md updates\n\n3. Ensure:\n   - pip install -e . works\n   - pytest runs (even with stubs)\n   - Ollama connection testing\n   - SQLite DB initialization\n\n4. Output:\n   - Final files/changes list\n   - Run commands\n   - Phase 1 roadmap"
+}
