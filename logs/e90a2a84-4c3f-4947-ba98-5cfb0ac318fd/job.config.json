@@ -1,0 +1,4 @@
+{
+  "title": "Create the literary AI project structure with:",
+  "job": "Create the literary AI project structure with:\n\n1. Main project directory with core components\n2. GUI framework files\n3. LLM integration files\n4. Universe bible database files\n5. Content generation logic files\n6. Storage solutions\n\nThe job will create the following files:\n- main.py (entry point)\n- gui/main_window.py\n- gui/settings.py\n- llm_integration/llm_connector.py\n- llm_integration/prompt_engine.py\n- universe_bible/bible_db.py\n- universe_bible/bible_editor.py\n- content_generator/chapter_creator.py\n- content_generator/serial_planner.py\n- storage/project_saver.py\n- storage/bible_saver.py\n\nThis will establish the foundational framework for our literary AI program."
+}
