@@ -1,4 +1,0 @@
-{
-  "title": "Phase 1 Implementation:",
-  "job": "Phase 1 Implementation:\n\n1. Implement core pipeline:\n   - passes.py (Pass 0: project setup, Pass 1: story skeleton)\n   - orchestrator.py (deterministic workflow + repair loop wiring)\n\n2. Initialize:\n   - Pass 0: Create ProjectConfig with genre/style/length/POV/tense\n   - Pass 1: Generate StorySkeleton with premise/arcs/ending/twists\n\n3. Integrate:\n   - Ollama model selection per role (planner/writer)\n   - Checker integration (continuity.py, style.py stubs)\n\n4. CLI Updates:\n   - Add `literary-ai plan` (Pass 0)\n   - Add `literary-ai draft` (Pass 1 stub)\n\n5. Output:\n   - Pass implementation stubs\n   - Repair loop skeleton\n   - Updated CLI commands\n   - Phase 2 roadmap"
-}
