@@ -1,0 +1,4 @@
+{
+  "title": "Phase 3 Implementation:",
+  "job": "Phase 3 Implementation:\n\n1. Implement Pass 3: Chapter Briefs Generation\n   - Create `generate_chapter_briefs()` in passes.py\n   - Output: Goals/conflict/outcomes, scenes list, motivations, continuity dependencies\n   - Use Ollama with model selection for briefs generation\n\n2. Update Orchestrator:\n   - Add Pass 3 to workflow ordering\n   - Integrate with repair loop\n\n3. Checker Integration:\n   - Add character consistency checker\n   - Update pacing.py for conflict escalation validation\n\n4. CLI Updates:\n   - Add `literary-ai briefs` command\n\n5. Artifacts:\n   - JSON structure for chapter briefs\n   - Integration with SQLite store\n\n6. Output:\n   - Pass implementation\n   - Updated orchestrator\n   - Checker stubs\n   - Phase 4 roadmap"
+}
