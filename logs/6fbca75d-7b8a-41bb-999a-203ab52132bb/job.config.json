@@ -1,0 +1,4 @@
+{
+  "title": "Phase 5 Implementation:",
+  "job": "Phase 5 Implementation:\n\n1. Implement Pass 5: Scene Drafts Generation\n   - Create `generate_scene_drafts()` in passes.py\n   - Output: Scene-level prose with beat-by-beat dialogue/action\n   - Use Ollama with model selection for drafting\n\n2. Update Orchestrator:\n   - Add Pass 5 to workflow ordering\n   - Integrate with repair loop\n\n3. Checker Integration:\n   - Add voice consistency validator\n   - Implement revision pass for pacing/continuity\n\n4. CLI Updates:\n   - Add `literary-ai draft-scenes` command\n\n5. Artifacts:\n   - JSON structure for scene drafts\n   - SQLite integration for draft storage\n\n6. Output:\n   - Pass implementation\n   - Updated orchestrator\n   - Checker stubs\n   - Phase 6 roadmap"
+}
