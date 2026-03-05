@@ -1,0 +1,4 @@
+{
+  "title": "Model Assignment & Ollama Integration (Phase 13):",
+  "job": "Model Assignment & Ollama Integration (Phase 13):\n\n1. Model Assignment System:\n   - Add GUI settings panel for model selection per task level (drafting, revision, export)\n   - Create `config/models.py` for model definitions\n   - Update SQLite store to track model assignments\n\n2. Runner Selection Logic:\n   - Develop algorithm to match tasks with appropriate model runners\n   - Add priority-based model selection for critical tasks\n\n3. Ollama Integration:\n   - Add GUI section to list/manage Ollama instances\n   - Implement Ollama instance discovery via GUI\n   - Create `workers/ollama_runner.py` for model execution\n\n4. Artifacts:\n   - Model assignment system\n   - Runner selection logic\n   - Ollama integration framework\n   - Phase 14 roadmap"
+}
