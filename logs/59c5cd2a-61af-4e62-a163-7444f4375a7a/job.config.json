@@ -1,4 +1,0 @@
-{
-  "title": "Create Phase 0 foundation for Bookforge project:",
-  "job": "Create Phase 0 foundation for Bookforge project:\n1. Create Bookforge/ directory structure with:\n   - pyproject.toml\n   - literary_ai/ (package dir)\n   - tests/\n   - README.md\n2. Implement ollama_client.py with Ollama HTTP integration\n3. Create artifact schema files in literary_ai/\n4. Implement SQLite store stub in literary_ai/\n5. Build Typer CLI skeleton with init/status commands\n6. Write README.md with installation instructions\n7. Ensure all files are under Bookforge/ directory\n8. Run gates: pip install -e ., pytest, CLI help, init/status test\n9. Commit to job/bookforge-phase0 branch and open PR to main"
-}
