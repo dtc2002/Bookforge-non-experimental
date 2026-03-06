@@ -1,4 +1,0 @@
-{
-  "title": "Implement Phase 1 (Milestone B) for Bookforge project:",
-  "job": "Implement Phase 1 (Milestone B) for Bookforge project:\n1. Develop multi-pass pipeline:\n   - Pass 0: constraints_capture.py\n   - Pass 1: skeleton_generator.py\n   - Pass 2: outline_builder.py\n   - Pass 3: chapter_planner.py\n   - Pass 4: scene_cards.py\n   - Pass 5: draft_generator.py\n   - Pass 6: revision_engine.py\n2. Implement checker system:\n   - continuity_checker.py\n   - plot_thread_validator.py\n   - causality_analyzer.py\n   - character_consistency.py\n   - pacing_analyzer.py\n   - style_checker.py\n3. Expand Typer CLI:\n   - Add plan, draft, revise, export commands\n   - Implement versioned run folders with timestamps\n   - Create run/ directory structure with reproducible logs\n4. Ensure all files remain under Bookforge/ directory\n5. Run gates: pipeline testing, CLI validation, run folder verification\n6. Commit to job/bookforge-phase1 branch and open PR to main"
-}
