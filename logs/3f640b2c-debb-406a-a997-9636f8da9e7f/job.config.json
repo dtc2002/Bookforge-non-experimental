@@ -1,0 +1,4 @@
+{
+  "title": "Retry PR creation for bookforge phase 0:",
+  "job": "Retry PR creation for bookforge phase 0:\n\n1. Ensure /bookforge directory exists with all contents\n2. Verify no files exist outside /bookforge\n3. Create new PR branch following repo conventions\n4. Commit changes to new branch\n5. Open PR to main\n\nRequirements:\n- Branch name must follow job/bookforge-phase0 format\n- All files must remain inside /bookforge\n- No changes to .github/, .claude/, .pi/, etc.\n- Confirm git status --porcelain shows only /bookforge changes"
+}
