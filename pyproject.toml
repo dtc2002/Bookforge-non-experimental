@@ -1,0 +1,18 @@
+[[tool.pytest]]
+
+[tool.typer]
+
+[project]
+name = "literary_ai"
+version = "0.1.0"
+
+[dependencies]
+pydantic >= 2.0
+sqlite-sa >= 0.1.0
+requests >= 2.28.1
+rich >= 10.13.0
+pytest >= 7.0
+pytest-asyncio >= 0.19.0
+
+[dev-dependencies]
+typer >= 0.21.0
