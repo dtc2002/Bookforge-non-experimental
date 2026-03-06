@@ -1,0 +1,4 @@
+{
+  "title": "Git Operations:",
+  "job": "Git Operations:\n\n1. Fetch origin\n2. Checkout `bot/dev` branch\n3. Add all changes\n4. Commit with message \"Phase 0 foundation\"\n5. Push to `bot/dev`\n6. Open PR to `main`\n\nFinal verification:\n- Confirm `git status --porcelain` shows tracked changes\n- Verify commit history\n- Ensure PR is created"
+}
