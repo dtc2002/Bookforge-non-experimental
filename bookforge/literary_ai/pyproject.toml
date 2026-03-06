@@ -1,0 +1,20 @@
+[build-system]
+requires = "pip>=20.3"
+
+[project]
+name = "literary_ai"
+version = "0.1.0"
+dependencies = [
+    "httpx>=0.23.0",
+    "pydantic>=2.0.0",
+    "typer>=0.21.0",
+    "sqlalchemy>=2.0.0",
+    "pytest>=7.0.0",
+    "sqlite3",
+]
+
+[tool.typer]
+pretty = true
+
+[tool.pytest.ini_options]
+minversion = "7.0"
