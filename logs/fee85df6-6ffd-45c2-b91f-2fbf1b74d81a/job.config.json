@@ -1,0 +1,4 @@
+{
+  "title": "Phase 0 Implementation:",
+  "job": "Phase 0 Implementation:\n\n1. Create foundational files:\n   - `pyproject.toml`\n   - `literary_ai/` package dir\n   - `tests/test_scaffold.py`\n   - `README.md`\n\n2. Implement `ollama_client.py` with:\n   - HTTP client\n   - Timeout handling\n   - Error messages\n\n3. Define Pydantic schemas for:\n   - ProjectConfig\n   - UniverseBible + entities\n   - Story artifacts\n   - Checker findings\n\n4. Create SQLite store stub:\n   - Initialize DB\n   - CRUD for Characters/PlotThreads/CanonFacts\n\n5. Develop Typer CLI:\n   - `init` (creates project structure)\n   - `status` (basic state)\n   - Pipeline command placeholders\n\n6. Write README with:\n   - Installation\n   - Ollama setup\n   - CLI examples\n   - Pass pipeline explanation\n\n7. Run gates:\n   - `python -m pip install -e .`\n   - `pytest`\n   - CLI command verification\n\nFinal steps:\n- Commit to `bot/dev`\n- Push and open PR to `main`"
+}
