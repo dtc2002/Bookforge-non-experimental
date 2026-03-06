@@ -1,0 +1,57 @@
+[[tool.pytest]]
+line-number-format = '0123456789'
+min-snapshot-lines = 10
+
+[tool.typer]
+module = "literary_ai.cli:app"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "literary_ai"
+version = "0.1.0"
+description = "AI-powered literary creation tools"
+requires-python = ">=3.9"
+dependencies = [
+    "typer>=0.1.0",
+    "pydantic>=2.0.0",
+    "sqlite3",
+    "httpx>=0.24.1",
+    "pytest>=7.0.0",
+    "rich>=13.0.0"
+]
+
+[tool.poetry]
+name = "literary_ai"
+version = "0.1.0"
+description = "AI-powered literary creation tools"
+license = "MIT"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [
+    {name = "literary_ai", include = "literary_ai/"}
+]
+
+dependencies = [
+    "typer>=0.1.0",
+    "pydantic>=2.0.0",
+    "sqlite3",
+    "httpx>=0.24.1",
+    "pytest>=7.0.0",
+    "rich>=13.0.0"
+]
+
+[tool.poetry.scripts]
+init = "literary_ai.cli:init"
+status = "literary_ai.cli:status"
+run = "literary_ai.cli:run"
+validate = "literary_ai.cli:validate"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+rich = "*"
