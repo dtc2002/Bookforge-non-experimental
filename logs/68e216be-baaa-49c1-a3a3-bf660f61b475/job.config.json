@@ -1,4 +1,0 @@
-{
-  "title": "Create Phase 0 foundation for bookforge:",
-  "job": "Create Phase 0 foundation for bookforge:\n\n1. Create /bookforge/literary_ai directory structure\n2. Generate pyproject.toml with dev dependencies\n3. Implement ollama_client.py with timeout handling\n4. Define artifact schemas for all pipeline passes\n5. Create SQLite store stub with CRUD operations\n6. Build Typer CLI skeleton with init/status commands\n7. Write README.md explaining project structure\n\nRequirements:\n- All files must be created under /bookforge\n- No changes to .github/, .claude/, .pi/, app/, config/, etc.\n- Use Python 3.10+ with Typer, SQLite, and requests\n- Implement error handling for Ollama connections\n- Create minimal viable schemas for all required artifacts"
-}
