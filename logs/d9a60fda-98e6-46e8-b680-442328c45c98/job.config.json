@@ -1,4 +1,0 @@
-{
-  "title": "Phase 0 Foundation: Scaffold literary_ai package under /bookforge",
-  "job": "Phase 0 Foundation: Scaffold literary_ai package under /bookforge\n1. Create /bookforge/literary_ai/ directory structure\n2. Generate pyproject.toml with pip install -e . support\n3. Implement ollama_client.py with timeout handling\n4. Create artifact schema files for all required types\n5. Set up SQLite store stub with basic CRUD\n6. Build Typer CLI skeleton with init/status commands\n7. Write README.md explaining project structure and usage\n8. Ensure all files are within /bookforge directory\n9. Verify gates: pip install -e ., pytest, cli commands\n10. Commit to job/bookforge-phase0 branch and open PR to main"
-}
