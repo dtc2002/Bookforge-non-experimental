@@ -1,0 +1,4 @@
+{
+  "title": "Create Bookforge directory structure and initialize first task:",
+  "job": "Create Bookforge directory structure and initialize first task:\n\n1. Create Bookforge/ directory with exact trailing slash\n2. Create required subdirectories: Bookforge/plans/, Bookforge/roadmap/, Bookforge/tasks/, Bookforge/data/\n3. Create initial files:\n   - Bookforge/plans/popebot_execution.md\n   - Bookforge/roadmap/99_execution_order.md\n   - Bookforge/tasks/phase_0.yaml\n4. Initialize first task in phase_0.yaml with status \"todo\"\n5. Validate directory structure\n6. Commit changes\n7. Open pull request to merge into main"
+}
