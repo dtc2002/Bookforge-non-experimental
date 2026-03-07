@@ -1,4 +1,0 @@
-{
-  "title": "Implement first task in Bookforge/plans/tasks/phase_0.yaml\\n\\n1. Read Bookforge/plans/tasks/phase_0.yaml to identify first",
-  "job": "Implement first task in Bookforge/plans/tasks/phase_0.yaml\\n\\n1. Read Bookforge/plans/tasks/phase_0.yaml to identify first \"todo\" task\\n2. Create output files specified in task documentation\\n3. Run validation steps to confirm task completion\\n4. Commit changes to repo\\n5. Open PR to main branch"
-}
