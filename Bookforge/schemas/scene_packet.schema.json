@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "required": ["chapter_number", "scene_count", "scenes"],
+  "properties": {
+    "chapter_number": { "type": "integer" },
+    "scene_count": { "type": "integer", "minimum": 1 },
+    "scenes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "scene_number",
+          "purpose",
+          "must_include",
+          "must_avoid",
+          "entry_state",
+          "exit_state"
+        ],
+        "properties": {
+          "scene_number": { "type": "integer" },
+          "purpose": { "type": "string" },
+          "must_include": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "must_avoid": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "required_callbacks": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "entry_state": { "type": "string" },
+          "exit_state": { "type": "string" },
+          "estimated_words": { "type": "integer", "minimum": 50 }
+        }
+      }
+    }
+  }
+}

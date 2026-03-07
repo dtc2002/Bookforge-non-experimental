@@ -1,0 +1,336 @@
+{
+  "type": "object",
+  "required": [
+    "working_title",
+    "genre",
+    "target_audience",
+    "tone",
+    "length_target",
+    "premise",
+    "protagonist",
+    "protagonist_goal",
+    "opposition_force",
+    "stakes",
+    "central_conflict",
+    "story_engine",
+    "ending_shape",
+    "pacing_profile",
+    "required_elements",
+    "forbidden_elements",
+    "act_structure"
+  ],
+  "properties": {
+    "working_title": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "genre": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "subgenre": {
+      "type": "string"
+    },
+
+    "target_audience": {
+      "type": "string",
+      "enum": [
+        "middle_grade",
+        "young_adult",
+        "new_adult",
+        "adult"
+      ]
+    },
+
+    "tone": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "length_target": {
+      "type": "string",
+      "enum": [
+        "short_story",
+        "novella",
+        "novel"
+      ]
+    },
+
+    "market_intent": {
+      "type": "string",
+      "enum": [
+        "personal",
+        "reader_facing",
+        "commercial",
+        "serial_web_fiction"
+      ]
+    },
+
+    "series_intent": {
+      "type": "string",
+      "enum": [
+        "standalone",
+        "possible_series",
+        "planned_series",
+        "serial"
+      ]
+    },
+
+    "pov_mode": {
+      "type": "string",
+      "enum": [
+        "first_person",
+        "third_person_limited",
+        "third_person_omniscient",
+        "multiple_pov"
+      ]
+    },
+
+    "tense_mode": {
+      "type": "string",
+      "enum": [
+        "past",
+        "present"
+      ]
+    },
+
+    "pacing_profile": {
+      "type": "string",
+      "enum": [
+        "fast",
+        "moderate",
+        "immersive"
+      ]
+    },
+
+    "premise": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "intended_emotional_effect": {
+      "type": "string"
+    },
+
+    "protagonist": {
+      "type": "object",
+      "required": [
+        "name",
+        "role",
+        "core_wound",
+        "core_need",
+        "starting_state"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "type": "string"
+        },
+        "core_wound": {
+          "type": "string"
+        },
+        "core_need": {
+          "type": "string"
+        },
+        "starting_state": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "key_supporting_cast": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "role",
+          "story_function"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "story_function": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+
+    "protagonist_goal": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "opposition_force": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "stakes": {
+      "type": "object",
+      "required": [
+        "personal",
+        "external"
+      ],
+      "properties": {
+        "personal": {
+          "type": "string"
+        },
+        "external": {
+          "type": "string"
+        },
+        "moral": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "central_conflict": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "story_engine": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "ending_shape": {
+      "type": "string",
+      "enum": [
+        "closed_win",
+        "closed_loss",
+        "bittersweet",
+        "open_but_stable",
+        "sequel_hook"
+      ]
+    },
+
+    "content_boundaries": {
+      "type": "object",
+      "properties": {
+        "violence": {
+          "type": "string",
+          "enum": [
+            "none",
+            "very_low",
+            "low",
+            "moderate",
+            "high"
+          ]
+        },
+        "romance": {
+          "type": "string",
+          "enum": [
+            "none",
+            "light",
+            "moderate",
+            "high"
+          ]
+        },
+        "sexual_content": {
+          "type": "string",
+          "enum": [
+            "none",
+            "fade_to_black",
+            "moderate",
+            "explicit"
+          ]
+        },
+        "language": {
+          "type": "string",
+          "enum": [
+            "none",
+            "mild",
+            "moderate",
+            "strong"
+          ]
+        },
+        "horror_intensity": {
+          "type": "string",
+          "enum": [
+            "none",
+            "light",
+            "moderate",
+            "high"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "required_elements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+
+    "forbidden_elements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+
+    "originality_constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+
+    "canon_scope": {
+      "type": "string",
+      "enum": [
+        "original",
+        "existing_bible"
+      ]
+    },
+
+    "act_structure": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "required": [
+          "act_number",
+          "purpose",
+          "turning_point",
+          "pressure_goal"
+        ],
+        "properties": {
+          "act_number": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "purpose": {
+            "type": "string"
+          },
+          "turning_point": {
+            "type": "string"
+          },
+          "pressure_goal": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

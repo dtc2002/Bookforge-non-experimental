@@ -1,0 +1,64 @@
+{
+  "type": "object",
+  "required": [
+    "status",
+    "length_target",
+    "measured_counts",
+    "budget_flags",
+    "simplification_recommendations",
+    "notes"
+  ],
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": ["pass", "fail"]
+    },
+    "length_target": {
+      "type": "string",
+      "enum": ["short_story", "novella", "novel"]
+    },
+    "measured_counts": {
+      "type": "object",
+      "required": [
+        "major_characters",
+        "supporting_characters",
+        "pov_characters",
+        "active_factions",
+        "major_plotlines",
+        "major_promises",
+        "named_key_locations",
+        "important_objects",
+        "major_secrets",
+        "antagonistic_forces",
+        "lore_expansions"
+      ],
+      "properties": {
+        "major_characters": { "type": "integer", "minimum": 0 },
+        "supporting_characters": { "type": "integer", "minimum": 0 },
+        "pov_characters": { "type": "integer", "minimum": 0 },
+        "active_factions": { "type": "integer", "minimum": 0 },
+        "major_plotlines": { "type": "integer", "minimum": 0 },
+        "major_promises": { "type": "integer", "minimum": 0 },
+        "named_key_locations": { "type": "integer", "minimum": 0 },
+        "important_objects": { "type": "integer", "minimum": 0 },
+        "major_secrets": { "type": "integer", "minimum": 0 },
+        "antagonistic_forces": { "type": "integer", "minimum": 0 },
+        "lore_expansions": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "budget_flags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "simplification_recommendations": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}

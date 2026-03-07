@@ -1,0 +1,13 @@
+{
+  "title": "The Locked Archive",
+  "genre": "mystery",
+  "target_audience": "adult",
+  "tone": "suspenseful",
+  "length_target": "short_story",
+  "content_boundaries": {
+    "violence": "low",
+    "romance": "none",
+    "language": "mild"
+  },
+  "universe_bible": ""
+}

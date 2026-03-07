@@ -1,0 +1,99 @@
+{
+  "type": "object",
+  "required": ["chapter_count", "chapters"],
+  "properties": {
+    "chapter_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "chapters": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "chapter_number",
+          "working_title",
+          "purpose",
+          "pov",
+          "entry_state",
+          "exit_state",
+          "beats_covered",
+          "constraints",
+          "estimated_words",
+          "pressure_start",
+          "pressure_end",
+          "pressure_sources",
+          "failure_consequence"
+        ],
+        "properties": {
+          "chapter_number": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "working_title": { "type": "string" },
+          "purpose": { "type": "string" },
+          "pov": { "type": "string" },
+          "location": { "type": "string" },
+          "time_context": { "type": "string" },
+          "entry_state": { "type": "string" },
+          "exit_state": { "type": "string" },
+
+          "beats_covered": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+
+          "required_callbacks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["chain_id", "callback_type", "description"],
+              "properties": {
+                "chain_id": { "type": "string" },
+                "callback_type": {
+                  "type": "string",
+                  "enum": ["setup", "reminder", "payoff", "complication"]
+                },
+                "description": { "type": "string" }
+              },
+              "additionalProperties": false
+            }
+          },
+
+          "constraints": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+
+          "estimated_words": {
+            "type": "integer",
+            "minimum": 100
+          },
+
+          "pressure_start": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10
+          },
+          "pressure_end": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10
+          },
+          "pressure_sources": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "failure_consequence": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

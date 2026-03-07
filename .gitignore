@@ -43,3 +43,6 @@ temp/
 
 # Data (SQLite memory, etc.)
 data/
+Bookforge/data/*
+!Bookforge/data/projects/
+!Bookforge/data/projects/.gitkeep

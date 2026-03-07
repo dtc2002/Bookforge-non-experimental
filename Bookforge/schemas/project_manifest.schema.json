@@ -1,0 +1,87 @@
+{
+  "type": "object",
+  "required": [
+    "project_id",
+    "title",
+    "created_at",
+    "current_stage",
+    "active_artifacts",
+    "artifact_history"
+  ],
+  "properties": {
+    "project_id": {
+      "type": "string"
+    },
+
+    "title": {
+      "type": "string"
+    },
+
+    "created_at": {
+      "type": "string"
+    },
+
+    "current_stage": {
+      "type": "string",
+      "enum": [
+        "brief",
+        "skeleton",
+        "beats",
+        "chapters",
+        "scenes",
+        "drafting",
+        "revision",
+        "complete"
+      ]
+    },
+
+    "active_artifacts": {
+      "type": "object",
+      "required": [
+        "brief",
+        "skeleton",
+        "beats",
+        "chapters"
+      ],
+      "properties": {
+        "brief": { "type": "string" },
+        "skeleton": { "type": "string" },
+        "beats": { "type": "string" },
+        "chapters": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+
+    "artifact_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "artifact_type",
+          "file",
+          "version",
+          "created_at"
+        ],
+        "properties": {
+          "artifact_type": {
+            "type": "string",
+            "enum": [
+              "brief",
+              "skeleton",
+              "beats",
+              "chapters",
+              "scenes",
+              "draft",
+              "validation"
+            ]
+          },
+          "file": { "type": "string" },
+          "version": { "type": "integer" },
+          "created_at": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

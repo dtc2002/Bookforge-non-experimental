@@ -1,0 +1,52 @@
+phase: 0
+title: Foundation
+
+tasks:
+
+  - id: P0-T01
+    title: Create Python package skeleton
+
+    outputs:
+      - Bookforge/src/bookforge/__init__.py
+      - Bookforge/src/bookforge/cli.py
+
+    validation:
+      - CLI command runs
+
+    status: todo
+
+
+  - id: P0-T02
+    title: Implement config loader
+
+    outputs:
+      - Bookforge/src/bookforge/config.py
+
+    validation:
+      - config loads successfully
+
+    status: todo
+
+
+  - id: P0-T03
+    title: Implement Ollama client
+
+    outputs:
+      - Bookforge/src/bookforge/ollama_client.py
+
+    validation:
+      - Ollama connection test passes
+
+    status: todo
+
+
+  - id: P0-T04
+    title: Implement gate runner
+
+    outputs:
+      - Bookforge/src/bookforge/gates.py
+
+    validation:
+      - gate runner executes
+
+    status: todo

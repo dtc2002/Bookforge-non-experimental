@@ -1,0 +1,52 @@
+{
+  "title": "The Bell Under Winter Glass",
+  "genre": "fantasy",
+  "subgenre": "gothic fantasy",
+  "target_audience": "adult",
+  "tone": "melancholic but hopeful",
+  "length_target": "short_story",
+  "intended_emotional_effect": "quiet ache followed by earned warmth",
+  "market_intent": "reader_facing",
+  "series_intent": "standalone",
+  "pov_preference": "third_person_limited",
+  "tense_preference": "past",
+  "ending_preference": "bittersweet",
+  "pacing_preference": "immersive",
+  "content_boundaries": {
+    "violence": "moderate",
+    "romance": "light",
+    "sexual_content": "none",
+    "language": "mild",
+    "horror_intensity": "light"
+  },
+  "required_elements": [
+    "winter market",
+    "haunted bell tower",
+    "sibling tension"
+  ],
+  "forbidden_elements": [
+    "chosen one prophecy",
+    "time travel"
+  ],
+  "taboo_elements": [],
+  "comparative_feel": [
+    "folkloric",
+    "atmospheric",
+    "intimate"
+  ],
+  "originality_constraints": [
+    "avoid direct franchise analogs",
+    "avoid overly familiar fantasy monarchy plot"
+  ],
+  "story_hook": "A bell that has not rung in thirty years tolls beneath a frozen glass dome.",
+  "premise_seed": "",
+  "setting_seed": "",
+  "character_seed": "",
+  "conflict_seed": "",
+  "operator_notes": [
+    "Keep the cast tight.",
+    "Do not overcomplicate the lore."
+  ],
+  "universe_bible": "",
+  "universe_mode": "original"
+}

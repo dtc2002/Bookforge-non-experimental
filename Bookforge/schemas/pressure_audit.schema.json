@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "required": [
+    "status",
+    "flat_sections",
+    "pressure_drops",
+    "insufficient_climax_support",
+    "notes"
+  ],
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": ["pass", "fail"]
+    },
+    "flat_sections": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "pressure_drops": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "insufficient_climax_support": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

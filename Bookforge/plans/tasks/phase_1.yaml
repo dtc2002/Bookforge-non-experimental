@@ -1,0 +1,250 @@
+phase: 1
+title: Story Planning
+
+tasks:
+  - id: P1-T01
+    title: Add planning schemas
+    inputs:
+      - Bookforge/plans/roadmap/02_phase_1_story_planning.md
+      - Bookforge/plans/standards/planning_rules.md
+    outputs:
+      - Bookforge/schemas/story_skeleton.schema.json
+      - Bookforge/schemas/beat_outline.schema.json
+      - Bookforge/schemas/chapter_plan.schema.json
+      - Bookforge/schemas/planning_assessment.schema.json
+    validation:
+      - "all schema files exist"
+      - "schema loader can parse all files"
+    status: todo
+
+  - id: P1-T02
+    title: Add planning prompt files
+    inputs:
+      - Bookforge/plans/standards/planning_rules.md
+      - Bookforge/plans/standards/brief_inheritance_rules.md
+    outputs:
+      - Bookforge/prompts/planning/brief_to_skeleton.md
+      - Bookforge/prompts/planning/skeleton_to_beats.md
+      - Bookforge/prompts/planning/beats_to_chapters.md
+      - Bookforge/prompts/planning/planning_review.md
+    validation:
+      - "all prompt files exist"
+      - "prompt loader can read all files"
+    status: todo
+
+  - id: P1-T03
+    title: Implement brief to skeleton planner
+    inputs:
+      - Bookforge/prompts/planning/brief_to_skeleton.md
+      - Bookforge/schemas/story_skeleton.schema.json
+    outputs:
+      - Bookforge/src/bookforge/planning/brief_to_skeleton.py
+    validation:
+      - "module imports successfully"
+      - "planner returns schema-valid output for smoke fixture"
+    status: todo
+
+  - id: P1-T04
+    title: Implement skeleton to beats planner
+    inputs:
+      - Bookforge/prompts/planning/skeleton_to_beats.md
+      - Bookforge/schemas/beat_outline.schema.json
+    outputs:
+      - Bookforge/src/bookforge/planning/skeleton_to_beats.py
+    validation:
+      - "module imports successfully"
+      - "planner returns schema-valid output for smoke fixture"
+    status: todo
+
+  - id: P1-T05
+    title: Implement beats to chapters planner
+    inputs:
+      - Bookforge/prompts/planning/beats_to_chapters.md
+      - Bookforge/schemas/chapter_plan.schema.json
+    outputs:
+      - Bookforge/src/bookforge/planning/beats_to_chapters.py
+    validation:
+      - "module imports successfully"
+      - "planner returns schema-valid output for smoke fixture"
+    status: todo
+
+  - id: P1-T06
+    title: Implement planning review module
+    inputs:
+      - Bookforge/prompts/planning/planning_review.md
+      - Bookforge/schemas/planning_assessment.schema.json
+      - Bookforge/plans/standards/brief_inheritance_rules.md
+    outputs:
+      - Bookforge/src/bookforge/planning/planning_review.py
+    validation:
+      - "module imports successfully"
+      - "review returns schema-valid output"
+    status: todo
+
+  - id: P1-T07
+    title: Implement non-LLM planning checks
+    inputs:
+      - Bookforge/plans/roadmap/02_phase_1_story_planning.md
+    outputs:
+      - Bookforge/src/bookforge/validation/planning_checks.py
+    validation:
+      - "module imports successfully"
+      - "basic checks run on smoke fixture"
+    status: todo
+
+  - id: P1-T08
+    title: Add phase 1 smoke test
+    inputs:
+      - Bookforge/examples/minimal_brief/project_brief.json
+    outputs:
+      - Bookforge/tests/smoke/test_phase_1_planning.py
+    validation:
+      - "pytest smoke test passes"
+    status: todo
+      - id: P1-T09
+    title: Extend planning schemas for pressure and payoff tracking
+    inputs:
+      - Bookforge/plans/standards/pressure_rules.md
+      - Bookforge/plans/standards/planning_rules.md
+    outputs:
+      - Bookforge/schemas/beat_outline.schema.json
+      - Bookforge/schemas/chapter_plan.schema.json
+      - Bookforge/schemas/pressure_audit.schema.json
+      - Bookforge/schemas/payoff_audit.schema.json
+    validation:
+      - "all updated schema files parse successfully"
+      - "new audit schemas parse successfully"
+    status: todo
+
+  - id: P1-T10
+    title: Add pressure and payoff review prompts
+    inputs:
+      - Bookforge/plans/standards/pressure_rules.md
+    outputs:
+      - Bookforge/prompts/planning/pressure_review.md
+      - Bookforge/prompts/planning/payoff_review.md
+    validation:
+      - "all prompt files exist"
+      - "prompt loader can read all files"
+    status: todo
+
+  - id: P1-T11
+    title: Implement pressure and payoff checks
+    inputs:
+      - Bookforge/schemas/pressure_audit.schema.json
+      - Bookforge/schemas/payoff_audit.schema.json
+    outputs:
+      - Bookforge/src/bookforge/validation/planning_checks.py
+    validation:
+      - "module imports successfully"
+      - "pressure and payoff checks run on smoke fixture"
+    status: todo
+
+  - id: P1-T12
+    title: Extend phase 1 smoke test for pressure and payoff validation
+    inputs:
+      - Bookforge/examples/minimal_brief/project_brief.json
+    outputs:
+      - Bookforge/tests/smoke/test_phase_1_planning.py
+    validation:
+      - "pytest smoke test passes"
+    status: todo
+      - id: P1-T13
+    title: Add project manifest schema
+    inputs:
+      - Bookforge/plans/standards/project_manifest_rules.md
+    outputs:
+      - Bookforge/schemas/project_manifest.schema.json
+    validation:
+      - "schema parses successfully"
+    status: todo
+
+  - id: P1-T14
+    title: Implement manifest management module
+    inputs:
+      - Bookforge/schemas/project_manifest.schema.json
+    outputs:
+      - Bookforge/src/bookforge/project_manifest.py
+    validation:
+      - "module imports successfully"
+      - "manifest loader validates schema"
+    status: todo
+
+  - id: P1-T15
+    title: Add artifact versioning utilities
+    inputs:
+      - Bookforge/plans/standards/artifact_versioning.md
+    outputs:
+      - Bookforge/src/bookforge/artifacts.py
+    validation:
+      - "module imports successfully"
+    status: todo
+
+      - id: P1-T16
+    title: Add story complexity budget standard and schema
+    inputs:
+      - Bookforge/plans/standards/story_complexity_budget.md
+      - Bookforge/plans/standards/length_profiles.md
+    outputs:
+      - Bookforge/plans/standards/story_complexity_budget.md
+      - Bookforge/schemas/complexity_audit.schema.json
+    validation:
+      - "standard file exists"
+      - "schema parses successfully"
+    status: todo
+
+  - id: P1-T17
+    title: Add complexity review prompt
+    inputs:
+      - Bookforge/plans/standards/story_complexity_budget.md
+    outputs:
+      - Bookforge/prompts/planning/complexity_review.md
+    validation:
+      - "prompt file exists"
+      - "prompt loader can read file"
+    status: todo
+
+  - id: P1-T18
+    title: Extend planning review and checks for complexity control
+    inputs:
+      - Bookforge/schemas/complexity_audit.schema.json
+      - Bookforge/prompts/planning/complexity_review.md
+      - Bookforge/plans/standards/story_complexity_budget.md
+    outputs:
+      - Bookforge/src/bookforge/planning/planning_review.py
+      - Bookforge/src/bookforge/validation/planning_checks.py
+      - Bookforge/schemas/planning_assessment.schema.json
+    validation:
+      - "modules import successfully"
+      - "complexity audit can be produced"
+    status: todo
+    
+      - id: P1-T19
+    title: Add JSON output contract standard
+    inputs:
+      - Bookforge/plans/standards/json_output_contract.md
+    outputs:
+      - Bookforge/plans/standards/json_output_contract.md
+    validation:
+      - "file exists"
+    status: todo
+
+  - id: P1-T20
+    title: Add JSON repair prompt
+    inputs:
+      - Bookforge/plans/standards/json_output_contract.md
+    outputs:
+      - Bookforge/prompts/system/json_repair.md
+    validation:
+      - "prompt file exists"
+    status: todo
+
+  - id: P1-T21
+    title: Extend prompt loader to enforce JSON output contract
+    inputs:
+      - Bookforge/plans/standards/json_output_contract.md
+    outputs:
+      - Bookforge/src/bookforge/prompts/prompt_loader.py
+    validation:
+      - "module imports successfully"
+    status: todo
