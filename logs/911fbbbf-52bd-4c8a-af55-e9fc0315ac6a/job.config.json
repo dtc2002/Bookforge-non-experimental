@@ -1,0 +1,4 @@
+{
+  "title": "Create Bookforge directory structure and initialize first task:",
+  "job": "Create Bookforge directory structure and initialize first task:\n1. Create Bookforge/ directory with proper structure\n2. Create initial task file with status \"todo\"\n3. Ensure all files are within Bookforge/ directory\n4. Do not modify files outside Bookforge/"
+}
