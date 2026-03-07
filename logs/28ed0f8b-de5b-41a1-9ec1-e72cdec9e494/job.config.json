@@ -1,4 +1,0 @@
-{
-  "title": "Implement the first task in Bookforge/plans/tasks/phase_0.yaml\\n\\n1. Create Bookforge/config/env_vars.json with required",
-  "job": "Implement the first task in Bookforge/plans/tasks/phase_0.yaml\\n\\n1. Create Bookforge/config/env_vars.json with required environment variables\\n2. Create Bookforge/scripts/setup_env.sh script to initialize variables\\n3. Validate contents of both files\\n4. Commit changes to repo\\n5. Open PR to main branch\\n\\nValidation steps:\\n- Confirm env_vars.json contains all required variables\\n- Verify setup_env.sh is executable and contains correct logic\\n- Ensure files are committed and PR is created"
-}
