@@ -1,0 +1,9 @@
+{
+  "APP_URL": "https://bookforge.example.com",
+  "DATABASE_URL": "postgres://user:password@localhost/bookforge_db",
+  "JWT_SECRET": "supersecretkey123",
+  "EMAIL_SERVICE": "smtp://user:password@smtp.example.com",
+  "STRIPE_API_KEY": "sk_test_1234567890",
+  "AWS_ACCESS_KEY_ID": "AKID1234567890ABCDEF",
+  "AWS_SECRET_ACCESS_KEY": "wJalrXUtnFEB7u2jnk7f53479B16b2g6YXu87T1R"
+}
